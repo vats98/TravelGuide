@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/light_blue_gradient"
+    tools:context="sujeet.traveller_guide.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1094C8"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100sp"
+            android:text="@string/_10_11_am"
+            android:layout_gravity="center"
+            android:gravity="center_horizontal|bottom"
+            android:id="@+id/tvTime"
+            android:textSize="60sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/january_1_2016"
+            android:layout_gravity="center"
+            android:gravity="top|center_horizontal"
+            android:textSize="30sp"
+            android:id="@+id/tvDate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/latitude"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"
+                android:src="@drawable/latitude"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:id="@+id/tvLatitude"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/longitude"
+                android:src="@drawable/longitude"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:layout_weight="1"
+                android:id="@+id/tvLongitude"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:contentDescription="@string/city"
+                android:background="@android:color/transparent"
+                android:src="@drawable/city"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:layout_weight="1"
+                android:textSize="25sp"
+                android:id="@+id/tvCity"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:contentDescription="@string/country"
+                android:src="@drawable/loca"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dot"
+                android:layout_weight="1"
+                android:id="@+id/tvCountry"
+                android:textSize="25sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivWeather"
+            android:background="#00000000"
+            android:contentDescription="@string/icon"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/thermometer"
+                android:foregroundGravity="right"
+                android:id="@+id/ivThermometer"
+                android:layout_gravity="center_vertical|end"
+                android:contentDescription="@string/thermometer"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/dot"
+                android:id="@+id/tvTemperature"
+                android:textSize="80sp"
+                android:gravity="start"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="20sp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/last_updated"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/tvLastUpdate" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="15sp"/>
+
+        <Button
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/find_nearby_places"
+            android:textSize="25sp"
+            android:id="@+id/btnFindNearbyPlaces" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+        <Button
+            android:background="@drawable/button_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/travel_guide"
+            android:textSize="25sp"
+            android:id="@+id/btnTravelGuide" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

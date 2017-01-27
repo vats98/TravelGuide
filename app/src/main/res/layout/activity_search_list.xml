@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/light_blue_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/my_toolbar_2"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#1094C8"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/restaurant">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/restaurant"
+                    android:contentDescription="@string/restaurant"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/restaurant"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tRe"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/railway">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/railway"
+                    android:contentDescription="@string/railway_station"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/railway_station"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tRa"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/park">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/park"
+                    android:contentDescription="@string/park"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/park"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tPa"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/atm">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/atm"
+                    android:contentDescription="@string/atm"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/atm"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tAt"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/movie">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/movie"
+                    android:contentDescription="@string/movie_theater"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movie_theater"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tMo"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/police">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/police"
+                    android:contentDescription="@string/police_station"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/police_station"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tPo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/airport">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/airport"
+                    android:contentDescription="@string/airport"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/airport"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tAi"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/hospital">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150sp"
+                    android:src="@drawable/hospital"
+                    android:contentDescription="@string/hospital"
+                    android:background="@android:color/transparent"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hospital"
+                    android:gravity="center"
+                    android:textSize="30sp"
+                    android:id="@+id/tHo"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
